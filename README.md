@@ -2,6 +2,8 @@
 
 An English / Turkish Next.js App Router site for **Atoll: Offline Translator**, made by 4pp Studio. Uses TypeScript, Tailwind CSS 4, and a static export. No analytics or tracking scripts.
 
+Production: **https://atoll-one.vercel.app** (Vercel project `atoll`).
+
 ## Run and check
 
 Requires Node.js 22 and npm.
@@ -49,6 +51,6 @@ vercel link --yes --project atoll
 vercel deploy --prod --yes
 ```
 
-The canonical site origin comes from `NEXT_PUBLIC_SITE_URL`, then Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, with `https://atoll.vercel.app` as the local fallback. If the production alias differs, set `NEXT_PUBLIC_SITE_URL` before building. Do not commit `.vercel/` or `.env*` files.
+The canonical site origin comes from `NEXT_PUBLIC_SITE_URL`, then Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, with `https://atoll-one.vercel.app` as the local fallback. If the production alias differs, set `NEXT_PUBLIC_SITE_URL` before building. Do not commit `.vercel/` or `.env*` files.
 
 Branding and store assets were copied into `public/`; the source files in `Mobil/` and `Desktop/` are unchanged. `public/favicon.ico` embeds the supplied 48px app icon. Privacy copy was adapted from the supplied bilingual policy to cover the Windows package and website hosting, and the Turkish contact placeholder was replaced with the supplied contact email.
