@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { githubUrl } from "@/config/downloads";
 import { content, type Locale } from "@/lib/content";
+import { Icon } from "./icon";
 
 export function Header({ locale, privacy = false }: { locale: Locale; privacy?: boolean }) {
   const c = content[locale];
@@ -16,6 +18,7 @@ export function Header({ locale, privacy = false }: { locale: Locale; privacy?: 
         <Link href={`${home}#screenshots`} className="nav-screenshots">{c.nav.screenshots}</Link>
         <Link href={`${home}#windows`}>{c.nav.windows}<span aria-hidden="true"> ↗</span></Link>
       </nav>
+      <a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Icon name="github" /><span>GitHub</span></a>
       <nav className="locale-switch" aria-label={c.footer.language}>
         <Link href={privacy ? "/privacy" : "/"} lang="en" hrefLang="en" aria-current={locale === "en" ? "page" : undefined}>EN</Link>
         <span aria-hidden="true">/</span>
@@ -30,7 +33,7 @@ export function Footer({ locale }: { locale: Locale }) {
   return <footer className="site-footer">
     <div className="container footer-main">
       <div><Link className="brand footer-brand" href={locale === "en" ? "/" : "/tr"}><Image src="/branding/atoll-icon-48.png" width={32} height={32} alt="" /><span>atoll<span className="brand-dot">.</span></span></Link><p>{c.footer.line}</p></div>
-      <div className="footer-links"><Link href={locale === "en" ? "/privacy" : "/tr/privacy"}>{c.nav.privacy}</Link><a href="mailto:4ppstudioss@gmail.com">{c.footer.contact}</a><span>{c.footer.made} <a href="https://www.4pp.studio">4pp Studio ↗</a></span></div>
+      <div className="footer-links"><Link href={locale === "en" ? "/privacy" : "/tr/privacy"}>{c.nav.privacy}</Link><a href="mailto:4ppstudioss@gmail.com">{c.footer.contact}</a><a href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>{c.footer.made} <a href="https://www.4pp.studio">4pp Studio ↗</a></span></div>
     </div>
     <div className="container footer-bottom"><span>© 2026 4pp Studio</span><span>{c.footer.rights}</span></div>
   </footer>;

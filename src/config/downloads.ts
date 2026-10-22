@@ -2,6 +2,8 @@
  * Publish the packages before enabling these links. Public environment variables
  * are embedded at build time, so redeploy after changing either URL.
  */
+export const githubUrl = "https://github.com/Fthkrks/atoll-releases";
+
 export const downloads = {
   windows: {
     url:

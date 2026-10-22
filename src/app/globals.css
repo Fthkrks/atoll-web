@@ -43,6 +43,9 @@ figure, p, h1, h2, h3, ol, ul, dl, dd { margin: 0; }
 .main-nav { display: flex; align-items: center; gap: 36px; font-size: 14px; font-weight: 550; }
 .main-nav a, .footer-links a { transition: color .18s; }
 .main-nav a:hover, .footer-links a:hover { color: var(--accent); }
+.github-link { display: inline-flex; align-items: center; gap: 7px; margin-left: auto; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 600; transition: color .18s, border-color .18s; }
+.github-link:hover { color: var(--accent); border-color: var(--accent); }
+.github-link svg { width: 18px; height: 18px; }
 .locale-switch { display: flex; align-items: center; gap: 9px; font-size: 12px; letter-spacing: .06em; }
 .locale-switch a { padding: 9px 5px; color: var(--muted); }
 .locale-switch a[aria-current] { color: var(--foreground); font-weight: 750; }
@@ -235,6 +238,8 @@ details[open] .faq-plus::after { transform: rotate(0deg); }
   .brand img { width: 32px; height: 32px; }
   .main-nav { gap: 16px; font-size: 12px; }
   .main-nav a:first-child, .nav-screenshots { display: none; }
+  .github-link { padding: 7px; }
+  .github-link span { display: none; }
   .locale-switch { gap: 4px; font-size: 10px; }
   .locale-switch a { padding-inline: 4px; }
   .hero { padding-block: 42px 35px; }
