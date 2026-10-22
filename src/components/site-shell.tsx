@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import Image from "next/image";
 import Link from "next/link";
 import { githubUrl } from "@/config/downloads";
@@ -40,5 +41,5 @@ export function Footer({ locale }: { locale: Locale }) {
 }
 
 export function RootShell({ locale, children }: { locale: Locale; children: React.ReactNode }) {
-  return <html lang={locale}><body><a className="skip-link" href="#main">{content[locale].nav.skip}</a>{children}</body></html>;
+  return <html lang={locale}><body><a className="skip-link" href="#main">{content[locale].nav.skip}</a>{children}<Analytics /></body></html>;
 }
