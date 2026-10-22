@@ -4,11 +4,11 @@
  */
 export const downloads = {
   windows: {
-    // Intended: https://github.com/Fthkrks/atoll-releases/releases/latest/download/Atoll-Windows-x64.zip
-    url: process.env.NEXT_PUBLIC_WINDOWS_DOWNLOAD_URL?.trim() || "",
-    // No public Windows version has been released yet. Set this on release.
-    version: "",
-    size: { en: "About 2 GB", tr: "Yaklaşık 2 GB" },
+    url:
+      process.env.NEXT_PUBLIC_WINDOWS_DOWNLOAD_URL?.trim() ||
+      "https://github.com/Fthkrks/atoll-releases/releases/latest/download/Atoll-Windows-x64.zip",
+    version: "1.0.0",
+    size: { en: "About 1.2 GB", tr: "Yaklaşık 1,2 GB" },
     platform: "Windows 10 / 11 · 64-bit",
   },
   android: {

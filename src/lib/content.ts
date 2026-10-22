@@ -41,12 +41,12 @@ export const content = {
         { title: "Translate", text: "Choose your text or document and translate. No internet needed." },
       ],
       requirements: "Room for a little intelligence.", requirementsIntro: "Recommended setup for the Windows app.",
-      specs: [{ value: "Windows 10 / 11", label: "64-bit operating system" }, { value: "8 GB RAM", label: "Recommended memory" }, { value: "~3 GB", label: "Free disk space" }],
+      specs: [{ value: "Windows 10 / 11", label: "64-bit operating system" }, { value: "8 GB RAM", label: "Recommended memory" }, { value: "~2.6 GB", label: "Free disk space" }],
     },
     people: { eyebrow: "TAKE YOUR WORDS WITH YOU", title: "For the journey. For the work. For you.", text: "For travelers without roaming, students and researchers, professionals handling confidential documents, and anyone who wants to translate without giving up their privacy." },
     faq: {
       eyebrow: "A FEW THINGS TO KNOW", title: "Good questions. Clear answers.", items: [
-        { question: "Why is the download about 2 GB?", answer: "The Windows package includes both the desktop app and the AI translation model. That is why it is larger than a typical app download, and why it can translate offline without downloading a model later." },
+        { question: "Why is the download about 1.2 GB?", answer: "The Windows package includes both the desktop app and the AI translation model. That is why it is larger than a typical app download, and why it can translate offline without downloading a model later." },
         { question: "Do I need Ollama or a separate model download?", answer: "On Windows, no. The model is bundled with the app, and Atoll uses llama.cpp to run it directly on your device. Download, unzip or run, and translate." },
         { question: "Does anything leave my device?", answer: "Your text, documents, scanned pages, and translations are processed on your device and never uploaded. Atoll has no accounts, ads, tracking, or analytics." },
         { question: "Which documents can I translate?", answer: "DOCX (Word), PPTX (PowerPoint), XLSX (Excel), PDF, TXT, and MD. Atoll preserves the layout, fonts, styles, tables, slides, and sheets. Scanned PDFs can be read with on-device OCR." },
@@ -90,12 +90,12 @@ export const content = {
         { title: "Çevirin", text: "Metninizi veya belgenizi seçip çevirin. İnternet gerekmez." },
       ],
       requirements: "Biraz zekâya yer açın.", requirementsIntro: "Windows uygulaması için önerilen sistem.",
-      specs: [{ value: "Windows 10 / 11", label: "64-bit işletim sistemi" }, { value: "8 GB RAM", label: "Önerilen bellek" }, { value: "~3 GB", label: "Boş disk alanı" }],
+      specs: [{ value: "Windows 10 / 11", label: "64-bit işletim sistemi" }, { value: "8 GB RAM", label: "Önerilen bellek" }, { value: "~2,6 GB", label: "Boş disk alanı" }],
     },
     people: { eyebrow: "KELİMELERİNİZİ YANINIZA ALIN", title: "Yolda. İşte. Sizinle.", text: "Dolaşımsız seyahat edenler, öğrenciler, araştırmacılar, gizli belgelerle çalışan profesyoneller ve gizliliğinden ödün vermeden çeviri yapmak isteyen herkes için." },
     faq: {
       eyebrow: "BİLMEK İSTEYEBİLECEKLERİNİZ", title: "İyi sorular. Açık cevaplar.", items: [
-        { question: "İndirme neden yaklaşık 2 GB?", answer: "Windows paketi hem masaüstü uygulamasını hem de yapay zekâ çeviri modelini içerir. Bu nedenle sıradan bir uygulama indirmesinden daha büyüktür ve daha sonra model indirmeden çevrimdışı çeviri yapabilir." },
+        { question: "İndirme neden yaklaşık 1,2 GB?", answer: "Windows paketi hem masaüstü uygulamasını hem de yapay zekâ çeviri modelini içerir. Bu nedenle sıradan bir uygulama indirmesinden daha büyüktür ve daha sonra model indirmeden çevrimdışı çeviri yapabilir." },
         { question: "Ollama veya ayrı bir model indirmesi gerekiyor mu?", answer: "Windows'ta hayır. Model uygulamayla birlikte gelir ve Atoll, llama.cpp ile doğrudan cihazınızda çalıştırır. İndirin, paketi açın veya uygulamayı çalıştırın ve çevirin." },
         { question: "Cihazımdan herhangi bir şey çıkar mı?", answer: "Metinleriniz, belgeleriniz, taranmış sayfalarınız ve çevirileriniz cihazınızda işlenir, hiçbir yere yüklenmez. Atoll'da hesap, reklam, takip ve analiz yoktur." },
         { question: "Hangi belgeleri çevirebilirim?", answer: "DOCX (Word), PPTX (PowerPoint), XLSX (Excel), PDF, TXT ve MD. Atoll düzeni, yazı tiplerini, stilleri, tabloları, slaytları ve sayfaları korur. Taranmış PDF'ler cihaz üstünde OCR ile okunabilir." },
