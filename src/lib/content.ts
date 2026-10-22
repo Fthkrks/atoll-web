@@ -1,0 +1,108 @@
+export type Locale = "en" | "tr";
+
+export const content = {
+  en: {
+    name: "Atoll: Offline Translator",
+    description: "Translate text and documents in 38 languages, fully offline. Private on-device AI, preserved layouts, and OCR. Windows app with the model included.",
+    nav: { features: "Features", screenshots: "A closer look", windows: "Windows", privacy: "Privacy", skip: "Skip to content", label: "Main navigation" },
+    hero: {
+      eyebrow: "YOUR WORDS. YOUR DEVICE.",
+      title: "A world of languages.",
+      accent: "Entirely offline.",
+      pitch: "Translate text and documents in 38 languages. Your words stay on your device, wherever you go.",
+      note: "No account. No ads. No tracking.",
+      preview: "A closer look at Atoll on Android",
+      caption: "Made to go wherever you do.",
+      status: "Private by design",
+      imageAlt: "Atoll Android app translating an English travel question into Turkish while offline",
+      sideNote: "38 languages. One private space.",
+    },
+    download: { windows: "Download for Windows", soon: "Coming soon", play: "Google Play", closed: "Android is currently in closed testing.", included: "App + AI model included", available: "Available for Windows", soonTitle: "Windows download coming soon", playSoon: "Google Play — coming soon" },
+    ribbon: ["100% offline translation", "38 languages", "Your files stay yours"],
+    features: {
+      eyebrow: "LESS CONNECTION. MORE POSSIBILITY.", title: "Translation, on your terms.",
+      intro: "Atoll runs the Tencent Hy-MT2 1.8B translation model directly on your device with llama.cpp. Powerful on-device AI, without sending your words to a server.",
+      items: [
+        { icon: "offline", title: "Go beyond the signal", text: "On a flight, on a train, or far from Wi-Fi. Translate fully offline, including in airplane mode." },
+        { icon: "shield", title: "Keep it to yourself", text: "Your text and documents never leave your device. No account, sign-up, tracking, analytics, or ads." },
+        { icon: "document", title: "Same document. New language.", text: "Translate DOCX, PPTX, XLSX, PDF, TXT, and MD. Keep fonts, styles, tables, slides, and sheets in place, and choose where to save." },
+        { icon: "scan", title: "Give scanned pages a voice", text: "On-device OCR reads scanned PDFs and image-based pages before translation. Nothing is sent online." },
+        { icon: "globe", title: "38 ways to be understood", text: "From English and Turkish to Chinese, Arabic, Japanese, and more. Pick your language pair and let Atoll detect the source language." },
+        { icon: "text", title: "From thought to translation", text: "Type or paste your text, choose a language, and translate in seconds. The interface is available in dozens of languages." },
+      ],
+    },
+    screenshots: { eyebrow: "A CLOSER LOOK", title: "Simple outside. Capable inside.", intro: "A look at the Android app, currently in closed testing. The same offline-first idea, from a quick phrase to a whole document.", captions: ["Translate, even in airplane mode", "Documents with their layout intact", "A language for every conversation", "Your preferences, on your device"], alts: ["Atoll Android text translation screen with an English question translated to Turkish", "Atoll Android document translation screen showing supported file formats", "Atoll Android language selection screen", "Atoll Android app preferences and settings screen"] },
+    windows: {
+      eyebrow: "ATOLL FOR WINDOWS", title: "Everything you need.\nIn one download.",
+      intro: "The desktop app and translation model come together in a single package. No Ollama installation. No separate model download. Just your device and your words.",
+      steps: [
+        { title: "Download", text: "Get the Windows package. The AI model is already inside." },
+        { title: "Run", text: "Unzip the package or run the app. No extra model setup needed." },
+        { title: "Translate", text: "Choose your text or document and translate. No internet needed." },
+      ],
+      requirements: "Room for a little intelligence.", requirementsIntro: "Recommended setup for the Windows app.",
+      specs: [{ value: "Windows 10 / 11", label: "64-bit operating system" }, { value: "8 GB RAM", label: "Recommended memory" }, { value: "~3 GB", label: "Free disk space" }],
+    },
+    people: { eyebrow: "TAKE YOUR WORDS WITH YOU", title: "For the journey. For the work. For you.", text: "For travelers without roaming, students and researchers, professionals handling confidential documents, and anyone who wants to translate without giving up their privacy." },
+    faq: {
+      eyebrow: "A FEW THINGS TO KNOW", title: "Good questions. Clear answers.", items: [
+        { question: "Why is the download about 2 GB?", answer: "The Windows package includes both the desktop app and the AI translation model. That is why it is larger than a typical app download, and why it can translate offline without downloading a model later." },
+        { question: "Do I need Ollama or a separate model download?", answer: "On Windows, no. The model is bundled with the app, and Atoll uses llama.cpp to run it directly on your device. Download, unzip or run, and translate." },
+        { question: "Does anything leave my device?", answer: "Your text, documents, scanned pages, and translations are processed on your device and never uploaded. Atoll has no accounts, ads, tracking, or analytics." },
+        { question: "Which documents can I translate?", answer: "DOCX (Word), PPTX (PowerPoint), XLSX (Excel), PDF, TXT, and MD. Atoll preserves the layout, fonts, styles, tables, slides, and sheets. Scanned PDFs can be read with on-device OCR." },
+        { question: "Is Atoll available on Android?", answer: "The Android app is currently in closed testing and is coming to Google Play. On first launch, Android downloads the model once (about 1.1 GB). Use Wi-Fi if possible and keep enough storage free. After that, translation works offline." },
+        { question: "Which languages are supported?", answer: "Atoll supports 38 languages, including Chinese, English, Turkish, French, German, Spanish, Portuguese, Italian, Russian, Arabic, Japanese, Korean, Hindi, Persian, Urdu, Vietnamese, Thai, and more." },
+      ],
+    },
+    footer: { line: "Your words stay with you.", made: "Made by", contact: "Get in touch", rights: "Atoll: Offline Translator", language: "Choose language" },
+  },
+  tr: {
+    name: "Atoll: Çevrimdışı Çevirmen",
+    description: "Metin ve belgelerinizi 38 dilde tamamen çevrimdışı çevirin. Cihaz üstünde yapay zekâ, korunan düzen ve OCR. Model dahil Windows uygulaması.",
+    nav: { features: "Özellikler", screenshots: "Yakından bakın", windows: "Windows", privacy: "Gizlilik", skip: "İçeriğe geç", label: "Ana gezinme" },
+    hero: {
+      eyebrow: "KELİMELERİNİZ. CİHAZINIZ.", title: "Dünya kadar dil.", accent: "Tamamen çevrimdışı.",
+      pitch: "Metin ve belgelerinizi 38 dilde çevirin. Nereye giderseniz gidin, kelimeleriniz cihazınızda kalsın.",
+      note: "Hesap yok. Reklam yok. Takip yok.", preview: "Android'de Atoll'a yakından bakın", caption: "Sizinle her yere gelmek için.", status: "Tasarımı gereği gizli",
+      imageAlt: "Atoll Android uygulamasında İngilizce bir seyahat sorusunun çevrimdışı Türkçe çevirisi", sideNote: "38 dil. Size özel bir alan.",
+    },
+    download: { windows: "Windows için indir", soon: "Yakında", play: "Google Play", closed: "Android sürümü şu anda kapalı testte.", included: "Uygulama + yapay zekâ modeli dahil", available: "Windows için hazır", soonTitle: "Windows indirmesi yakında", playSoon: "Google Play — yakında" },
+    ribbon: ["%100 çevrimdışı çeviri", "38 dil", "Dosyalarınız size özel kalır"],
+    features: {
+      eyebrow: "DAHA AZ BAĞLANTI. DAHA ÇOK İMKÂN.", title: "Çeviri, sizin koşullarınızla.",
+      intro: "Atoll, Tencent Hy-MT2 1.8B çeviri modelini llama.cpp ile doğrudan cihazınızda çalıştırır. Kelimelerinizi bir sunucuya göndermeden, cihaz üstünde güçlü yapay zekâ.",
+      items: [
+        { icon: "offline", title: "Sinyalin ötesine geçin", text: "Uçakta, trende ya da Wi-Fi'dan uzakta. Uçak modu dahil, tamamen çevrimdışı çeviri yapın." },
+        { icon: "shield", title: "Size özel kalsın", text: "Metinleriniz ve belgeleriniz cihazınızdan asla çıkmaz. Hesap, kayıt, takip, analiz ve reklam yok." },
+        { icon: "document", title: "Aynı belge. Yeni bir dil.", text: "DOCX, PPTX, XLSX, PDF, TXT ve MD çevirin. Yazı tipleri, stiller, tablolar, slaytlar ve sayfalar yerinde kalsın; kaydedilecek yeri siz seçin." },
+        { icon: "scan", title: "Taranmış sayfalara söz verin", text: "Cihaz üstünde OCR, taranmış PDF'leri ve görüntü tabanlı sayfaları çeviri öncesinde okur. Hiçbir şey internete gönderilmez." },
+        { icon: "globe", title: "Anlaşılmanın 38 yolu", text: "İngilizce ve Türkçeden Çince, Arapça, Japonca ve daha fazlasına. Dil çiftini seçin, kaynak dili Atoll algılasın." },
+        { icon: "text", title: "Düşünceden çeviriye", text: "Metni yazın veya yapıştırın, bir dil seçin ve saniyeler içinde çevirin. Arayüz onlarca dilde kullanılabilir." },
+      ],
+    },
+    screenshots: { eyebrow: "YAKINDAN BAKIN", title: "Sade bir arayüz. Güçlü bir çevirmen.", intro: "Şu anda kapalı testte olan Android uygulamasına bir bakış. Kısa bir cümleden bütün bir belgeye, aynı çevrimdışı yaklaşım.", captions: ["Uçak modunda bile çeviri", "Düzeni korunan belgeler", "Her konuşma için bir dil", "Tercihleriniz, cihazınızda"], alts: ["Atoll Android metin çevirisi ekranında İngilizceden Türkçeye çevrilen soru", "Atoll Android belge çevirisi ekranı ve desteklenen dosya biçimleri", "Atoll Android dil seçim ekranı", "Atoll Android uygulama tercihleri ve ayarlar ekranı"] },
+    windows: {
+      eyebrow: "WINDOWS İÇİN ATOLL", title: "İhtiyacınız olan her şey.\nTek bir indirmede.",
+      intro: "Masaüstü uygulaması ve çeviri modeli tek bir pakette. Ollama kurulumu yok. Ayrı model indirmesi yok. Yalnızca cihazınız ve kelimeleriniz.",
+      steps: [
+        { title: "İndirin", text: "Windows paketini indirin. Yapay zekâ modeli zaten içinde." },
+        { title: "Çalıştırın", text: "Paketi açın veya uygulamayı çalıştırın. Ek model kurulumu gerekmez." },
+        { title: "Çevirin", text: "Metninizi veya belgenizi seçip çevirin. İnternet gerekmez." },
+      ],
+      requirements: "Biraz zekâya yer açın.", requirementsIntro: "Windows uygulaması için önerilen sistem.",
+      specs: [{ value: "Windows 10 / 11", label: "64-bit işletim sistemi" }, { value: "8 GB RAM", label: "Önerilen bellek" }, { value: "~3 GB", label: "Boş disk alanı" }],
+    },
+    people: { eyebrow: "KELİMELERİNİZİ YANINIZA ALIN", title: "Yolda. İşte. Sizinle.", text: "Dolaşımsız seyahat edenler, öğrenciler, araştırmacılar, gizli belgelerle çalışan profesyoneller ve gizliliğinden ödün vermeden çeviri yapmak isteyen herkes için." },
+    faq: {
+      eyebrow: "BİLMEK İSTEYEBİLECEKLERİNİZ", title: "İyi sorular. Açık cevaplar.", items: [
+        { question: "İndirme neden yaklaşık 2 GB?", answer: "Windows paketi hem masaüstü uygulamasını hem de yapay zekâ çeviri modelini içerir. Bu nedenle sıradan bir uygulama indirmesinden daha büyüktür ve daha sonra model indirmeden çevrimdışı çeviri yapabilir." },
+        { question: "Ollama veya ayrı bir model indirmesi gerekiyor mu?", answer: "Windows'ta hayır. Model uygulamayla birlikte gelir ve Atoll, llama.cpp ile doğrudan cihazınızda çalıştırır. İndirin, paketi açın veya uygulamayı çalıştırın ve çevirin." },
+        { question: "Cihazımdan herhangi bir şey çıkar mı?", answer: "Metinleriniz, belgeleriniz, taranmış sayfalarınız ve çevirileriniz cihazınızda işlenir, hiçbir yere yüklenmez. Atoll'da hesap, reklam, takip ve analiz yoktur." },
+        { question: "Hangi belgeleri çevirebilirim?", answer: "DOCX (Word), PPTX (PowerPoint), XLSX (Excel), PDF, TXT ve MD. Atoll düzeni, yazı tiplerini, stilleri, tabloları, slaytları ve sayfaları korur. Taranmış PDF'ler cihaz üstünde OCR ile okunabilir." },
+        { question: "Atoll Android'de kullanılabilir mi?", answer: "Android uygulaması şu anda kapalı testte ve yakında Google Play'de olacak. İlk açılışta Android modeli bir kez indirir (yaklaşık 1,1 GB). Mümkünse Wi-Fi kullanın ve yeterli boş alan bırakın. Sonrasında çeviri çevrimdışı çalışır." },
+        { question: "Hangi diller destekleniyor?", answer: "Atoll; Çince, İngilizce, Türkçe, Fransızca, Almanca, İspanyolca, Portekizce, İtalyanca, Rusça, Arapça, Japonca, Korece, Hintçe, Farsça, Urduca, Vietnamca, Tayca ve daha fazlası dahil 38 dili destekler." },
+      ],
+    },
+    footer: { line: "Kelimeleriniz sizinle kalsın.", made: "Geliştiren:", contact: "İletişim", rights: "Atoll: Çevrimdışı Çevirmen", language: "Dil seçin" },
+  },
+} as const;
