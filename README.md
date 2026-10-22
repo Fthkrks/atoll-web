@@ -54,3 +54,14 @@ vercel deploy --prod --yes
 The canonical site origin comes from `NEXT_PUBLIC_SITE_URL`, then Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, with `https://atoll-one.vercel.app` as the local fallback. If the production alias differs, set `NEXT_PUBLIC_SITE_URL` before building. Do not commit `.vercel/` or `.env*` files.
 
 Branding and store assets were copied into `public/`; the source files in `Mobil/` and `Desktop/` are unchanged. `public/favicon.ico` embeds the supplied 48px app icon. Privacy copy was adapted from the supplied bilingual policy to cover the Windows package and website hosting, and the Turkish contact placeholder was replaced with the supplied contact email.
+
+## Atoll projects
+
+- [atoll](https://github.com/Fthkrks/atoll): Android app (Flutter + llama.cpp via llamadart)
+- [atoll-desktop](https://github.com/Fthkrks/atoll-desktop): Windows app (WinUI 3 + LLamaSharp)
+- [atoll-web](https://github.com/Fthkrks/atoll-web): website (Next.js), https://atoll-one.vercel.app
+- [atoll-releases](https://github.com/Fthkrks/atoll-releases): Windows downloads
+
+## License
+
+The source code is released under the [MIT License](LICENSE). The translation model is not part of this repository. It is the Tencent Hy-MT2 1.8B GGUF model ([tencent/Hy-MT2-1.8B-GGUF](https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF)), released by Tencent under the Apache License 2.0.
